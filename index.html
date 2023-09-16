@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="/js/index.js"></script>
+    <script src="/js/app.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/img//icons/icon-96x96.jpeg" />
+    <meta name="apple-mobile-web-app-status-bar" content="#f84343" />
+    <meta name="theme-color" content="#f84343" />
+    <title>LET'S LEARN MATHS</title>
+  </head>
+  <body>
+    <!-- <audio id="myAudio">
+      <source src="wrong.mp3" type="audio/mpeg" />
+    </audio> -->
+
+    <header>
+      <div class="content-container">
+        <div class="nav">
+          <h2>
+            <i class="fa fa-trophy" aria-hidden="true"></i> LET'S LEARN MATHS
+          </h2>
+          <nav>
+            <ul>
+              <li id="add"><a>Add</a></li>
+              <li id="subtract"><a>Subtract</a></li>
+              <li id="multiply"><a>Multiply</a></li>
+              <li id="divide"><a>Divide</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="equation-wrpper">
+      <div class="equation-container">
+        <h1 id="num1" style="color: #fe4a49">2</h1>
+        <h1 id="operation" style="color: #2ab7ca">+</h1>
+        <h1 id="num2" style="color: #fed766">1</h1>
+        <h1 style="color: #f86624">=</h1>
+        <h1 style="color: gray">?</h1>
+      </div>
+
+      <div class="answers">
+        <div class="option" style="background-color: #fe4a49">
+          <h1 id="option1">1</h1>
+        </div>
+        <div class="option" style="background-color: #2ab7ca">
+          <h1 id="option2">2</h1>
+        </div>
+        <div class="option" style="background-color: #fed766">
+          <h1 id="option3">3</h1>
+        </div>
+      </div>
+      <div id="result" class="result"></div>
+    </div>
+  </body>
+</html>

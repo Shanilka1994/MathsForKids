@@ -1,0 +1,18 @@
+{
+   "name": "Let's learn Maths",
+   "short_name": "Let's learn Maths",
+   "start_url": "/index.html",
+   "display": "standalone",
+   "background_color": "#fff",
+   "theme_color": "#f84343",
+   "orientation": "portrait-primary",
+  "icons": [
+    {
+        "src": "/img/icons/icon-96x96.jpeg",
+        "type": "image/jpeg",
+        "sizes": "96x96"
+      }
+    
+]
+}
+

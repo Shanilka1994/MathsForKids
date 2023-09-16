@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Luckiest Guy', cursive;
+  background-color: #E6E6EA;
+}
+
+/* layout styles */
+header{
+  background: #f84343;
+}
+
+.content-container{
+  width: 96%;
+  margin: auto;
+}
+
+.nav{
+  overflow: hidden;
+  background:#f84343;
+  color: #fff;
+  padding: 21px 0;
+}
+
+.nav h2{
+  font-size: 3rem;
+  float: left;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  font-size: 1.4rem;
+  margin-top: 10px;
+  float: left;
+  padding: 0 17px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.selected a::after{
+  content: '-';
+  font-size: 5px;
+  background-color: rgb(230, 216, 216);
+  display: block;
+}
+
+
+/* wrapper */
+.equation-wrpper{
+  display: grid;
+  /* grid-template-columns: 83% 17%; */
+}
+
+.equation-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+  font-size: 5.3vw;
+  background: #ededed;
+  border-radius: 4px;
+  text-align: center;
+  margin: 12px 12px 0px 12px;
+}
+
+.equation-container h1{
+  display: inline;
+  padding: 20px;
+  font-size: 4rem;
+}
+
+.answers{
+  font-size: 8vw;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.option{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 50px;
+  color: #fff;
+  transition: 2s;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+  width: -webkit-fill-available;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 20px;
+}
+
+
+.correctresult{
+  text-align: center;
+  margin-top: 50px;
+  color: forestgreen;
+  font-size: large;
+}
+
+.wrongresult{
+  text-align: center;
+  margin-top: 50px;
+  color: #f84343;
+  font-size: large;
+}
+
+@media(max-width:768px){
+  .nav h2{
+    font-size: 1.5rem;
+    float: none;
+    text-align: center;
+  }
+
+  nav{
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li{
+    font-size: 1rem;
+  }
+}
+
+@media(max-width:480px){
+  .nav h2{
+    float: none;
+    text-align: center;
+  }
+
+  .equation h1{
+    display: inline;
+    padding: 10px;
+    font-size: 10rem;
+  } 
+
+  nav li{
+    font-size: .8rem;
+  }
+
+}
